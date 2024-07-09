@@ -1,0 +1,94 @@
+/* Reseteo de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo del cuerpo */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+#textoDesencriptado {
+    user-select: none; /* Deshabilitar la selección de texto */
+    cursor: default;
+}
+
+/* Sección izquierda */
+.left-section {
+    flex: 2;
+    padding: 40px;
+    background-color: #f8f8f8;
+}
+
+.left-section input,
+.left-section textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.left-section textarea {
+    height: 200px;
+    resize: none;
+}
+
+.left-section .buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-section .buttons button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#btnEncriptar {
+    background-color: #0b5394;
+    color: #fff;
+}
+
+#btnDesencriptar {
+    background-color: #b6c9e1;
+    color: #333;
+}
+
+/* Sección derecha */
+.right-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.right-section .message {
+    text-align: center;
+    color: #666;
+}
+
+.right-section .message img {
+    width: 100px;
+    margin-bottom: 20px;
+}
